@@ -1,0 +1,8 @@
+ *****Exception while update :: 
+CognitiveServicesSubscriptionException{errorCode : BatchFailed ,message : Cognitive Services Subscription error ,httpStatus : 401 ,httpRespBody : {"error":{"code":"Unspecified","message":"Access denied due to invalid subscription key. Make sure you are subscribed to an API you are trying to call and provide the right key."}}}
+2017-05-16 16:30:07.328 main n******** Exception while update batchhhhhh :: 
+CognitiveServicesSubscriptionException{errorCode : BatchFailed ,message : Cognitive Services Subscription error ,httpStatus : 401 ,httpRespBody : {"error":{"code":"Unspecified","message":"Access denied due to invalid subscription key. Make sure you are subscribed to an API you are trying to call and provide the right key."}}}
+2017-05-16 18:48:00.12 main n******** Exception while update :: 
+CognitiveServicesSubscriptionException{errorCode : BatchFailed ,message : Cognitive Services Subscription error ,httpStatus : 401 ,httpRespBody : {"error":{"code":"Unspecified","message":"Access denied due to invalid subscription key. Make sure you are subscribed to an API you are trying to call and provide the right key."}}}
+2017-05-16 18:49:37.752 main n******** Exception while update :: 
+CognitiveServicesSubscriptionException{errorCode : BatchFailed ,message : Cognitive Services Subscription error ,httpStatus : 401 ,httpRespBody : {"error":{"code":"Unspecified","message":"Access denied due to invalid subscription key. Make sure you are subscribed to an API you are trying to call and provide the right key."}}}

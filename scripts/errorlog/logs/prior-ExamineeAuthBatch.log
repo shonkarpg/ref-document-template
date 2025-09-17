@@ -1,0 +1,1 @@
+CognitiveServicesSubscriptionException{errorCode : BatchFailed ,message : Cognitive Services Subscription error ,httpStatus : 401 ,httpRespBody : {"error":{"code":"Unspecified","message":"Access denied due to invalid subscription key. Make sure you are subscribed to an API you are trying to call and provide the right key."}}}
