@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#cd
+cd /home/ec2-user/queries/etc/mysql-backup/casec_en/
+
+#env
+app="giemtest_with_sample_cn giemtest_with_sample_en giemtest_with_sample_ja giemtest_with_sample_th giemtest_with_sample_vi giemtest_with_sample_in" 
+SERVER=sakura
+BACKUP_DIR=/home/ec2-user/queries/etc/mysql-backup/casec_en/backup/
+BK_FILE_BASENAME=backup-
+BK_FILE_SUFFIX=.gz
+MYSQL_HOME=/opt/mysql/
+
+#file rote
+rm -f ${BACKUP_DIR}${BK_FILE_BASENAME}${SERVER}.4${BK_FILE_SUFFIX}
+mv -f ${BACKUP_DIR}${BK_FILE_BASENAME}${SERVER}.3${BK_FILE_SUFFIX} ${BACKUP_DIR}${BK_FILE_BASENAME}${SERVER}.4${BK_FILE_SUFFIX}
+mv -f ${BACKUP_DIR}${BK_FILE_BASENAME}${SERVER}.2${BK_FILE_SUFFIX} ${BACKUP_DIR}${BK_FILE_BASENAME}${SERVER}.3${BK_FILE_SUFFIX}
+mv -f ${BACKUP_DIR}${BK_FILE_BASENAME}${SERVER}.1${BK_FILE_SUFFIX} ${BACKUP_DIR}${BK_FILE_BASENAME}${SERVER}.2${BK_FILE_SUFFIX}
+mv -f ${BACKUP_DIR}${BK_FILE_BASENAME}${SERVER}.0${BK_FILE_SUFFIX} ${BACKUP_DIR}${BK_FILE_BASENAME}${SERVER}.1${BK_FILE_SUFFIX}
+
+##db backup
+mysqldump -h  <>DBServer --skip-lock-tables -usakuradb -pKgh98FG --databases ${app} | gzip > ${BACKUP_DIR}${BK_FILE_BASENAME}${SERVER}.0${BK_FILE_SUFFIX}
