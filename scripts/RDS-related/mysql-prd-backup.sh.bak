@@ -1,0 +1,15 @@
+#!/bin/bash
+# Db backup for  jtms prd
+# Applications:
+# This backup is scheduled to run at every day 18:30 IST
+THEDBUSER="prd_master"
+THEDBPW="BR5ium4qCkq2ArzaSSgT=="
+THEDATE=$(date +%Y-%m-%d)
+THEDATET=$(date +"%Y%m%d:%H%M")
+THEDATETT=$(date +"%Y%m%d%H%M")
+JTMSRDS="/root/backup/mysql-backup"
+PRD="jtms-prd.c3vvnhmpjvxw.ap-northeast-1.rds.amazonaws.com"
+mkdir ${JTMSRDS}/${THEDATE}
+#jtms-prd
+mysqldump --skip-lock-tables -h $PRD -u $THEDBUSER -p${THEDBPW} jtms --routines | gzip > ${JTMSRDS}/${THEDATE}/jtms${THEDATET}.prd.sql.gz
+echo " backup finished on  ${THEDATETT}"
