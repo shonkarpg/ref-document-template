@@ -1,0 +1,29 @@
++---01_Projects
+¦   +---1.0_ProjectTemplate
+¦   ¦   +---Check_List
+¦   ¦   ¦   +---Vulnerability
+¦   ¦   +---Documents
+¦   ¦   ¦   +---Security
+¦   ¦   +---Procedure
+¦   ¦   +---Release
+¦   ¦   ¦   +---Unused_AWS_Resource
+¦   ¦   +---Scripts
+¦   +---1.1_<ProjectName>
+¦   ¦   +---Check_List
+¦   ¦   ¦   +---Vulnerability
+¦   ¦   +---Documents
+¦   ¦   ¦   +---Security
+¦   ¦   +---Procedure
+¦   ¦   +---Release
+¦   ¦   ¦   +---Unused_AWS_Resource
+¦   ¦   +---Scripts
++---02_Reports
++---03_KnowledgeBase-KB
++---04_Internal
+    +---Atlassian
+    +---AWS
+    +---Domain_Registrar
+    +---Google
+    +---Microsoft-Azure
+    +---Zoho
+
